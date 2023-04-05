@@ -1,9 +1,9 @@
 class Solution {
 public:
-    //dp[0][0] - 到trangle[0][0]的最小路径和 
-    //dp[1][0] - 到trangle[1][0]的最小路径和 = dp[0][0] + tri[1][0]
-    //dp[1][1] - 到trangle[1][1]的最小路径和 = dp[0][0] + tri[1][1]
-    //到trangle[row][col]的最小路径和 = min(dp[row-1][col]，dp[row-1][col-1])
+    //dp[0][0] - 到triangle[0][0]的最小路径和 
+    //dp[1][0] - 到triangle[1][0]的最小路径和 = dp[0][0] + tri[1][0]
+    //dp[1][1] - 到triangle[1][1]的最小路径和 = dp[0][0] + tri[1][1]
+    //到triangle[row][col]的最小路径和 = min(dp[row-1][col]，dp[row-1][col-1])
     //+triangle[row][col]
 
     int minimumTotal(vector<vector<int>>& triangle) 
